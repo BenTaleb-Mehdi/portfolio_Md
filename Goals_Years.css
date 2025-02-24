@@ -1,0 +1,205 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #0b0b0b;
+  padding: 20px 20px;
+}
+:root {
+  --color-background-image: linear-gradient(
+    to top,
+    #011704,
+    #011403,
+    #001003,
+    #000b02,
+    #000501
+  );
+  --color-menu: #011704;
+  --text-color: rgb(225, 225, 225);
+}
+.title {
+  padding: 20px;
+}
+.title h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.title h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+.title h3 span {
+  color: #09a71e;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% auto;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.formGoals {
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.formGoals h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 550;
+  color: white;
+}
+form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+form label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.763);
+}
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  color: white;
+  transition: 0.4s;
+}
+form input:hover,
+form select:hover {
+  border-bottom: 1px solid rgb(22, 122, 15);
+}
+form input::placeholder {
+  color: grey;
+}
+form select {
+  cursor: pointer;
+}
+option {
+  background-color: #0c0c0c;
+  color: white;
+  border: 1px solid transparent;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid transparent;
+  background-color: rgb(10, 105, 10);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(0.99);
+  transition: 0.4s;
+}
+form button:hover {
+  background-color: rgb(4, 82, 4);
+  transform: scale(0.97);
+}
+.DiaplayGoals {
+  overflow-y: scroll;
+  display: inline-block;
+  height: auto;
+  max-height: 500px; /* Sets a max height to prevent overflow */
+}
+.DiaplayGoals::-webkit-scrollbar {
+  width: 9px;
+}
+
+.DiaplayGoals::-webkit-scrollbar-thumb {
+  background: #03440c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.DiaplayGoals::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+.goals {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.Tgoal {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.goals .titleGoals {
+  color: #d2d2d2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #053f0d25;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.dateCreated span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0a7a19;
+}
+.goalIcon i {
+  font-size: 30px;
+  color: var(--text-color);
+}
+.WhriteGoal h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.WhriteGoal p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.WhriteGoal p span {
+  color: #0a7a19;
+}

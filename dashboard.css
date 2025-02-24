@@ -1,0 +1,226 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 20px 20px;
+}
+:root {
+  --color-background-image: linear-gradient(
+    to top,
+    #011704,
+    #011403,
+    #001003,
+    #000b02,
+    #000501
+  );
+  --color-menu: #011704;
+  --text-color: rgb(225, 225, 225);
+}
+.titleUsersection {
+  padding: 30px;
+}
+.titleUsersection h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.titleUsersection h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #118721;
+}
+.titlePartanalyes {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #118721;
+  padding: 30px;
+}
+/* Container for boxes */
+.boxes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+/* Individual box */
+.box {
+  background: #1717174f;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px;
+  width: 100%;
+  height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Section (Title and Icon) */
+.prtAnalayses {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.analeasesT h2 {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.analeasesT p {
+  font-size: 12px;
+  color: grey;
+}
+
+.partIcon i {
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+/* Numbers Section */
+.numbers {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.nb span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.iconnb span {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.iconnb span i {
+  color: #056b12;
+  font-size: 20px;
+}
+.iconnb .downup i {
+  color: #6b0505;
+  font-size: 20px;
+}
+
+.analaysesHome {
+  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 30px;
+}
+
+.chart {
+  height: auto;
+  width: 90%;
+}
+#myChart {
+  height: 100%;
+  width: 100%;
+}
+
+.goals {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.goals .titleGoals {
+  color: #d2d2d2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #053f0d25;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.dateCreated span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0a7a19;
+}
+.goalIcon i {
+  font-size: 30px;
+  color: var(--text-color);
+}
+.WhriteGoal h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.WhriteGoal p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.WhriteGoal p span {
+  color: #0a7a19;
+}
+
+.DiaplayGoals {
+  overflow-y: scroll;
+  display: inline-block;
+  height: auto;
+  max-height: 400px; /* Sets a max height to prevent overflow */
+}
+.DiaplayGoals::-webkit-scrollbar {
+  width: 9px;
+}
+
+.DiaplayGoals::-webkit-scrollbar-thumb {
+  background: #03440c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.DiaplayGoals::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+.Tgoal {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}

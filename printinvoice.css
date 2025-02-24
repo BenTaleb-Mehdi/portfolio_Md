@@ -1,0 +1,108 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 20px;
+}
+:root {
+  --color-background-image: linear-gradient(
+    to top,
+    #011704,
+    #011403,
+    #001003,
+    #000b02,
+    #000501
+  );
+  --color-menu: #011704;
+  --text-color: rgb(225, 225, 225);
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+.invoiceContent{
+  width: 100%;
+}
+.navinvoice {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+}
+.informationsClient img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.informationsClient h2,
+.informationsCompany h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(4, 129, 4);
+  margin-bottom: 5px;
+}
+.informationsClient p,
+.informationsCompany p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.974);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.informationsClient span,
+.informationsCompany span {
+  font-weight: 550;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+.contentTable {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 100px;
+}
+table {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+table th,
+td {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.195);
+  padding: 5px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  
+}
+table th {
+  background-color: rgb(23, 199, 79);
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+}
+table td{
+  padding: 15px 12px;
+}
+.content button{
+  padding: 10px;
+  outline: 0;
+  border: 1px solid transparent;
+  background-color: rgb(16, 173, 16);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
