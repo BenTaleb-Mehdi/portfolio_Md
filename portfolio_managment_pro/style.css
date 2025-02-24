@@ -1,0 +1,171 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(15, 15, 15);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  padding: 7px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+.name h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.name img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.typepage h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+form {
+  width: 35%;
+}
+.contentlogin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 100%;
+}
+.contentlogin h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 35px;
+}
+.contentlogin h2 span {
+  color: green;
+}
+.contentlogin label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.contentlogin input {
+  padding: 15px;
+  width: 100%;
+  outline: 0;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.contentlogin button {
+  padding: 14px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contentlogin a {
+  color: white;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnswitch {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.btnswitch .singupbtn {
+  text-decoration: none;
+  font-size: 14px;
+  color: green;
+  font-weight: 600;
+}
+@media screen and (max-width: 740px) {
+  form {
+    width: 100%;
+  }
+  .contentlogin {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+  }
+  .contentlogin h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+  }
+  .contentlogin h2 span {
+    color: green;
+  }
+}
+.spaceerror.remove{
+  display: none;
+}
+.spaceerror {
+  background-color: brown;
+  color: rgb(58, 2, 2);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spaceerror button{
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid transparent;
+  font-size: 25px;
+  color: rgb(246, 209, 209);
+  cursor: pointer;
+}

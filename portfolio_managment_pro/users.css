@@ -1,0 +1,371 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 20px 20px;
+}
+:root {
+  --color-background-image: linear-gradient(
+    to top,
+    #011704,
+    #011403,
+    #001003,
+    #000b02,
+    #000501
+  );
+  --color-menu: #011704;
+  --text-color: rgb(225, 225, 225);
+}
+.navbar {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #056b12;
+  color: white;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.img img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.info h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #010f03;
+}
+.drop button {
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid transparent;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.titleAnalyese {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.titlePart {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #118721;
+}
+.contentUsers {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  background-color: var(--color-background-image);
+  opacity: 1;
+  transform: scale(1);
+  transition: transform scale 0.4s ease opacity 0.4s ease;
+  padding: 30px;
+}
+
+/*space users */
+.bestusersrsAndmessages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+.usersSpace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
+  gap: 40px;
+  width: 100%;
+  height: auto;
+}
+.titleTable {
+  text-align: start;
+}
+.serchUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 50px;
+}
+.serchUser h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.serchUser input {
+  padding: 10px;
+
+  background-color: #111111;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 0;
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: 10px;
+}
+.serchUser button {
+  padding: 0px;
+  height: 37px;
+  width: 37px;
+  background-color: #317f06;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datatable {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+.datatable table {
+  background-color: #191a1925;
+  padding: 20px;
+  border-radius: 10px;
+  width: auto;
+  overflow-y: scroll;
+  display: inline-block;
+
+  height: auto;
+  max-height: 350px; /* Sets a max height to prevent overflow */
+}
+.datatable ::-webkit-scrollbar {
+  width: 9px;
+}
+
+.datatable ::-webkit-scrollbar-thumb {
+  background: #03440c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.datatable ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+tr,
+th,
+td {
+  padding: 15px 7px;
+  border-bottom: 1px solid rgb(30, 30, 30);
+  border-collapse: collapse;
+}
+tr th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  position: sticky;
+  background-color: #0c0c0c;
+  top: 0;
+}
+tr td {
+  position: sticky;
+  top: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+td select {
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  background-color: rgb(13, 13, 13);
+}
+
+td a {
+  text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: 0;
+}
+td button {
+  text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: 0;
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btnStauts,
+.tbtnstuts {
+  border-left: 1px solid rgb(27, 27, 27);
+}
+.bestusersrsAndmessages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+.bestusersrsAndmessages .bestsClinet {
+  width: 100%;
+  height: auto;
+}
+.bestsClinet .formClint {
+  background-color: #191a1925;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  gap: 30px;
+}
+.icontBest i {
+  font-size: 50px;
+  color: #013608;
+}
+.bestusersrsAndmessages .message {
+  width: 100%;
+  height: auto;
+}
+.bestUsers {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 10px;
+}
+.nameclinet h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.879);
+  margin-bottom: 5px;
+}
+.nameclinet p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.879);
+}
+.nameclinet span {
+  color: #056b12;
+}
+
+.msgUsers {
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column; /* Stack messages vertically */
+  gap: 10px; /* Space between messages */
+}
+
+.message {
+  background-color: #191a1925; /* Semi-transparent background for messages */
+  padding: 15px 20px; /* Adjusted padding for better spacing */
+  border-radius: 10px; /* Rounded corners for messages */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Center content vertically */
+  justify-content: center; /* Space out message content */
+  width: 100%; /* Full width for each message */
+  gap: 10px; /* Adjusted gap between message elements */
+}
+
+.infoMsg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.iconmessage i {
+  font-size: 50px;
+  color: #013608;
+}
+.informessage h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.879);
+  margin-bottom: 5px;
+}
+.informessage p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.879);
+}
+.informessage span {
+  color: #056b12;
+  margin-right: 5px;
+}
+.seeMsg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 5px;
+}
+.seeMsg a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  outline: 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.seeMsg a:hover {
+  color: #056b12;
+}
+.seeMsg i {
+  font-size: 18px;
+}
+.navMsUsers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
